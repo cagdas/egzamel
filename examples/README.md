@@ -9,7 +9,7 @@ First example
 
 A simple example of search nodes in the document.
 
-<?php
+ 
     require_once '../class/Egzamel.php';
 
     $file = './data/example1.xml';
@@ -19,7 +19,7 @@ A simple example of search nodes in the document.
 
     Egzamel::parse($file, $query);
     Egzamel::toXml();
-?>
+ 
 
 Output
 
@@ -38,18 +38,18 @@ Second example
 ==============
 Search by giving attribute with value
 
-    <?php
+ 
 	require_once '../class/Egzamel.php';
 
 	$file = './data/example1.xml';
-       $query = array(
+        $query = array(
 	'student' => array( "age" => "22")
 
 	);
 
 	Egzamel::parse($file, $query);
 	Egzamel::toXml();
-    ?>
+ 
 
 Output
 
