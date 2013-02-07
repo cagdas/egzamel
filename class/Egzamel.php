@@ -8,7 +8,7 @@
  * This is a beta version.
  *
  * @author cagdas.emek
- * @
+ *  
  */
 class Egzamel {
 
@@ -42,15 +42,13 @@ class Egzamel {
     }
 
     public static function endElement($_parser, $org_name) {
-//	$name = mb_strtolower($org_name, 'UTF-8');
-//	if (isset(self::$map_array[$name])) {
+	$name = mb_strtolower($org_name, 'UTF-8');
+	if (isset(self::$map_array[$name])) {
 //	    echo "</".$name.">";
-//	}
+	}
     }
 
     public static function characterData($_parser, $data) {
-//	echo self::$cursor_pos."--". $data;
-//	$data = trim($data);
 	if (isset(self::$result_set[self::$cursor_pos]['value']) && $data!=='' )
 	    self::$result_set[self::$cursor_pos]['value'] = $data;
     }
