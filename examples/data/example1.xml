@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<students>
+    <student name='Matthew' surname='Gambardella' age='22' gender='male' />
+    <student name='Kim' surname='Ralls' age='23' gender='female' />
+    <student name='Cynthia' surname='Randall' age='23' gender='male' />
+    <student name='Eva' surname='Corets' age='22' gender='female' />
+    <student name='Paula' surname='Thurman' age='20' gender='female' />
+    <student name='Stefan' surname='Knorr' age='22' gender='male' />
+    <student name='Mike' surname='Galos' age='21' gender='male' />
+</students>
+<books>
+    <book id="bk1001" >XML Developer's Guide</book>
+    <book id="bk1002" >Maeve Ascendant</book>
+    <book id="bk1003" >Midnight Rain</book>
+    <book id="bk1004" >Creepy Crawlies</book>
+</books>
+</data>
