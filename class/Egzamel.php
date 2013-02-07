@@ -78,8 +78,8 @@ class Egzamel {
 	// use case-folding so we are sure to find the tag in $map_array
 	xml_parser_set_option(self::$xml_parser, XML_OPTION_SKIP_WHITE, true);
 	xml_parser_set_option(self::$xml_parser, XML_OPTION_CASE_FOLDING, FALSE);
-	xml_set_element_handler(self::$xml_parser, array(self, "startElement"), array(self, "endElement"));
-	xml_set_character_data_handler(self::$xml_parser, array(self, "characterData"));
+	xml_set_element_handler(self::$xml_parser, array("self" , "startElement"), array("self", "endElement"));
+	xml_set_character_data_handler(self::$xml_parser, array("self", "characterData"));
 	if (!($fp = fopen($file, "r"))) {
 	    die("could not open XML input");
 	}
